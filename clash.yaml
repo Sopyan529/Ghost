@@ -1,0 +1,78 @@
+proxies:
+  - name: Toeror02
+    server: 104.21.71.112
+    port: 443
+    type: trojan
+    password: toeror02
+    skip-cert-verify: true
+    sni: blog.clova.line.me
+    network: ws
+    ws-opts: 
+      path: wss://blog.clova.line.me/vpnneo
+      headers: 
+        Host: nusa8.nextvpn.cc
+    udp: true
+  - name: Xianling
+    server: 104.21.71.112
+    port: 443
+    type: vmess
+    uuid: 07a7fe05-cf71-4eb6-92f6-d1f095d5431a
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: blog.clova.line.me
+    network: ws
+    ws-opts: 
+      path: wss://blog.clova.line.me/worryfree
+      headers: 
+        Host: reli1.nextvpn.cc
+    udp: true
+  - name: Xianling opok
+    server: reli1.nextvpn.cc
+    port: 80
+    type: vmess
+    uuid: 07a7fe05-cf71-4eb6-92f6-d1f095d5431a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: http://tsel.me/worryfree
+      headers: 
+        Host: 43.255.196.243/https://my.telkomsel.com/app/login?code=AeGFN1hqtW
+    udp: true
+  - name: maul
+    server: qa4j.vpsxc.my.id
+    port: 80
+    type: vmess
+    uuid: 2712ee76-8ea0-44cc-bbb2-8f5d77e375d8
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: http://tsel.me/worryfree
+      headers: 
+        Host: 43.255.196.243/https://my.telkomsel.com/app/login?code=AeGFN1hqtW
+    udp: true
+  - name: isat
+    server: 172.67.70.101
+    port: 443
+    type: vmess
+    uuid: 2712ee76-8ea0-44cc-bbb2-8f5d77e375d8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: qa4j.vpsxc.my.id
+    network: ws
+    ws-opts: 
+      path: /worryfree
+      headers: 
+        Host: qa4j.vpsxc.my.id
+    udp: true
